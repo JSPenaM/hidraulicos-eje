@@ -1,0 +1,86 @@
+/* Variables de diseño - Industrial */
+:root {
+  --color-primary: #0D47A1;
+  --color-primary-light: #1565C0;
+  --color-primary-dark: #0A3A7A;
+  --color-secondary: #F9A825;
+  --color-secondary-dark: #F57F17;
+  --color-accent: #C62828;
+  --color-accent-light: #E53935;
+  --color-surface: #FFFFFF;
+  --color-bg: #F5F5F5;
+  --color-bg-alt: #EEEEEE;
+  --color-text: #1A1A1A;
+  --color-text-muted: #424242;
+  --font-heading: 'Oswald', 'Roboto', sans-serif;
+  --font-body: 'DM Sans', 'Roboto', sans-serif;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --radius: 12px;
+  --radius-lg: 20px;
+  --transition: 0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Patrón sutil industrial (líneas diagonales) */
+.pattern-industrial {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 4px,
+    rgba(255, 255, 255, 0.03) 4px,
+    rgba(255, 255, 255, 0.03) 5px
+  );
+}
+
+.pattern-dots {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.section-label {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-secondary-dark);
+}
+
+.section-title {
+  font-family: var(--font-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  line-height: 1.15 !important;
+}
+
+/* Botones CTA mejorados */
+.cta-primary {
+  box-shadow: 0 4px 14px rgba(13, 71, 161, 0.4) !important;
+  transition: transform var(--transition), box-shadow var(--transition) !important;
+}
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 71, 161, 0.5) !important;
+}
+
+.cta-whatsapp {
+  box-shadow: 0 4px 14px rgba(198, 40, 40, 0.35) !important;
+  transition: transform var(--transition), box-shadow var(--transition) !important;
+}
+.cta-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(198, 40, 40, 0.45) !important;
+}
